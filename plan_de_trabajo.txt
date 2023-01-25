@@ -1,0 +1,6 @@
+Onboarding ingreso: Sofia Ordoñez
+- Comienzo: Ene 20 2023
+- Basic: Ene 24 2023 (2)
+- HTML5+CSS: Feb 3 2023 (7)
+- Javascript: Feb 9 2023 (4)
+- Node Scripting: Feb 23 2023 (10)
