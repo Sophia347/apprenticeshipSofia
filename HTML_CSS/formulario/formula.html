@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Documento formulario</title>
+</head>
+
+<body>
+    <div style="text-align:center">
+
+        <h1>Formulario </h1>
+
+        <form action=""method="post"  >
+
+            <label for="nombre" >Nombre</label>
+            <input type="text" id="nombre" required>
+            <br>
+            <label for="apellido">apellido</label>
+            <input type="text" id="apellido" required>
+            <br>
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo" required pattern=".+@globex\.com">
+            <br>
+            <label for="fech_naci">Fecha de nacimiento</label>
+            <input type="date" id="fech_naci" required>
+            <br>
+         
+            <label for="deporte">Seleccione el deporte favorito </label>
+            <select id="deporte" required∫>
+                
+                <option value="basketball">Ningun deporte</option>
+                <option value="futbol">futbol</option>
+                <option value="tenis">Tenis</option>
+                <option value="basketball">basketball</option>∫
+                <option value="Golf">Golf</option>
+               
+
+            </select>
+            
+               
+          
+              
+            <br>
+            <p>Biografia </p>
+            
+            <textarea for="biografia" placeholder="Ingrese una descripcion de usted " rows="5" cols="30" required></textarea>
+            <br>
+            <input type="reset" value="Borrar">
+            <button type="submit">Enviar</button>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>
