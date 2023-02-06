@@ -8,45 +8,45 @@
     <title>CSS</title>
 </head>
 
-<body class="bg-no-repeat bg-cover">
+<body class="bg-no-repeat bg-cover bg-black">
 
     <nav class="mx-12">
         <div class="flex justify-between mt-10 ">
             <img class="font-semibold text-3xl logo ml-12 menu" src="img/Logo.svg">
-            <div class=" navbar text-white ml-6 text-sm  ">
+            <div class=" navbar_register text-white ml-6 text-sm  ">
                 <a class="hover_line " href=" # "> Register</a>
-                <button class="bot rounded mx-6 mr-1 text-sm " href="#">Login </button>
+                <button class="bot_login rounded mx-6 mr-1 text-sm " href="#">Login </button>
             </div>
         </div>
         
     </nav>
 
-    <div class="flex justify-center bg-black m-auto container text-white  mt-12 ">
+    <div class="flex justify-center bg-black m-auto caja_login text-white  mt-12 ">
         <form class="rounded-b justify-center  mt-8 text-base">
-            <h1 class=" title flex justify-center ">Inicia sesión</h1>
+            <h1 class=" title_inic_sesion flex justify-center leading-10 font-medium">Inicia sesión</h1>
 
             <div>
                 <label for="correo"></label>
                 <input class="mt-8 w-full p-2 bg-white p-2 text-black text-justify text-base text-sm  rounded"
-                    placeholder="Email o número de teléfono" type="email" id="correo" required pattern=".+@globex\.com">
+                    placeholder="Email o número de teléfono" type="email" id="correo" required >
             </div>
 
             <div>
                 <label for="contraseña"></label>
                 <input class=" mt-8 w-full p-2 bg-white p-2 text-black rounded " type="password"
-                    placeholder="contraseña" id="contraseña" required>
+                    placeholder="contraseña" id="password" required>
             </div>
 
-            <button class="boton mt-8 text-lg " type="button">Iniciar sesión</button>
-            <br>
+            <button class="boton_inici_sesion mt-8 text-lg " type="button">Iniciar sesión</button>
+            
             <div>
-                <div class=" mt-4 flex justify-between text-sm  ">
+                <div class=" mt-4 flex justify-between text-sm pt-1.5 ">
                     <div>
                         <input type="checkbox" id="remember ">
-                        <label class="mx-4 " for=" remember"><a class="rounde" href="#">recuerdame</a> </label>
+                        <label class="mx-4 " for=" remember"><a  href="#">recuerdame</a> </label>
                     </div>
                     <div>
-                        <a class="text-sm hover_line " href=" # "> Nesecitas ayuda? </a>
+                        <a class="text-sm hover_line " href=" # "> ecesita ayuda? </a>
                     </div>
                 </div>
             </div>
@@ -61,12 +61,12 @@
             </div> 
         </form>        
     </div>
-   <div class=" item grid  pt-44 text-white ">
-        <div class="grid  container2  ">
+   <div class=" item pt-44 text-white pb-2.5 ">
+        <div class=" container2  ">
             <div>
                 <span class=" mt-8 p-40 text-3xl " >Questions? Call +1 (408) 600-1722 (USA)</span>    
             </div>
-            <div class="items grid mt-12  mb-9 text-lg pt-16 justify-evenly ">
+            <div class="items_grid grid mt-12  mb-9 text-lg pt-16 justify-evenly ">
                 <span >FAQ</span>
                 <span >Privacy</span>
                 <span >Speed Test</span>
@@ -86,6 +86,7 @@
 </body>
 
 </html>
+
 
 
 
