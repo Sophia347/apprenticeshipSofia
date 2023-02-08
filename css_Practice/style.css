@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-
+body { 
     background-image: url("img/Bitmap.jpg");
-}
-
-.body-home1{
- 
-    background-image:url("img/img_home1/Bitmap.png");
-
 }
 .body-list {
     background: black;
+}
+
+.body-perfil {
+    background: #171616;
 }
 
 .caja_login {
@@ -24,7 +21,7 @@ body {
 }
 
 .navbar_register {
-  
+
     size: 18px;
 }
 
@@ -35,13 +32,6 @@ body {
     width: 341px;
 
 
-}
-
-
-.title_inic_sesion {
-
-    font-size: 36px;
-    
 }
 
 .bot_login {
@@ -62,35 +52,59 @@ body {
     gap: 1em;
 
 }
-.navbarlist{
-    width: 100%;
-}
-.hover-img:hover{-webkit-transform:scale(1.3);transform:scale(1.3);}
-.hover-img {overflow:hidden;}
 
-.hover_line:hover{
+.hover_line:hover {
     text-decoration: underline;
 
 }
 
-
-
-
-.box_home{
-box-sizing: border-box;
-border: 1px solid #92AAD7
+.cuadrado {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border: 1px solid #000;
 
 }
 
-.tex{
-    width: 773px;
-    height: 99px;
-    size: 18px;
+.container {
+    background-color: #171616;
+    
 }
 
-.coltex{
 
-color: #92AAD7;
+
+.linea {
+    Width: 848px;
+    color: rgb(61, 59, 59);
+
 }
 
+.botton1 {
+    Width: 114px;
+    background-color: rgba(5, 120, 255, 1);
+    color: white;
+    Height: 43px;
+    
+}
+
+.botton2 {
+    Width: 166px;
+    background-color: #171616;
+    Height: 43px;
+   
+}
+
+.botton3 {
+    Width: 273px;
+    Height: 43px;
+
+}
+
+.border {
+    border: 1px solid #061B9C;
+}
+
+.border:hover {
+    border-color: #068FF4;
+}
 
