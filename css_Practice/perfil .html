@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./output.css" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body class="body-perfil">
+
+    <nav class="mx-12">
+
+        <img class="font-semibold text-3xl rounded logo mt-10 " src="img/Logo.svg">
+
+    </nav>
+
+
+    <div class="flex flex-col" >
+        <div class="m-auto">
+                <h1 class="text-white text-5xl pt-16 pb-7">Edit Profile</h1>
+                <hr class="text-white linea">
+                    <div>
+                        <div class="flex text-sm py-8">
+                            
+                            <div class="cuadrado p-4 borde mr-10 hover_line">
+                                <img src="img/perfil.svg">
+                            </div>
+                            <div>
+                                <div class="flex items-center ll">
+                                    <label for="nombre"></label>
+                                    <input class=" text-white  h-8 bg-black w-full border" type="text" id="nombre" required>
+                                    <input class="ml-3   " type="checkbox" id="checkboxID " > 
+                                    <label class="text-white ml-3 labelcheckbox" for="checkboxID "><a  href="#">Kid?</a> </label>
+                                </div>
+ 
+                                <h1 class="text-white mt-3" for="idioma">Language:</h1>
+                                <select class=" text-white border bg-black mt-1 h-8 border" id="text" name="idioma" required>
+                                <option>Ingles</option>
+                                <option>Español</option>
+                                <option>Frances</option>
+                                <option>Portuges</option>
+                                <option>Italiano</option>
+                                <option>Aleman</option>
+                                </select>
+
+                                <h1 class=" text-white mt-3 " for="prog_permitidos">Allowed TV shows and movies:</h1>
+                                        <select class=" text-white border bg-black mt-1 h-8 border" id="text " name="prog_permitidos" required>
+                                        <option>All Maturity levels</option>
+                                        <option>niños</option>
+                                        <option>adultos</option>
+                                        </select>
+                            </div>
+                        </div>
+                    </div>
+                            <hr class="text-white linea">
+
+                            
+                            <div class="text-white  mt-11 text-sm  ">
+                                    <button class="botton1 mr-5  h-10 border hover_line rounded " type="button">SAVE</button>
+                                    <button class="botton2 mr-5 h-10 border hover_line rounded" type="button">CANCEL</button>
+                                    <button class="botton3 border h-10 hover_line rounded" type="button">IDELETE PROFILE </button>
+                            </div>
+        </div>
+
+    </div>
+
+</body>
+

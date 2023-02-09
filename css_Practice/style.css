@@ -71,11 +71,9 @@ body {
     
 }
 
-
-
 .linea {
-    Width: 848px;
-    color: rgb(61, 59, 59);
+    color: #979797;
+    Opacity: 19.94%
 
 }
 
@@ -83,20 +81,17 @@ body {
     Width: 114px;
     background-color: rgba(5, 120, 255, 1);
     color: white;
-    Height: 43px;
+ 
     
 }
 
 .botton2 {
     Width: 166px;
-    background-color: #171616;
-    Height: 43px;
-   
+
 }
 
 .botton3 {
     Width: 273px;
-    Height: 43px;
 
 }
 
@@ -108,3 +103,11 @@ body {
     border-color: #068FF4;
 }
 
+
+
+  .input [ type =color]{
+    background-color: #068FF4;
+    width: 30px;
+    height: 30px;
+  }
+  

@@ -712,6 +712,10 @@ video {
   margin-bottom: 2.25rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -830,6 +834,10 @@ video {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-full {
@@ -2465,26 +2473,22 @@ body {
 }
 
 .linea {
-  Width: 848px;
-  color: rgb(61, 59, 59);
+  color: #979797;
+  Opacity: 19.94%
 }
 
 .botton1 {
   Width: 114px;
   background-color: rgba(5, 120, 255, 1);
   color: white;
-  Height: 43px;
 }
 
 .botton2 {
   Width: 166px;
-  background-color: #171616;
-  Height: 43px;
 }
 
 .botton3 {
   Width: 273px;
-  Height: 43px;
 }
 
 .border {
@@ -2493,6 +2497,12 @@ body {
 
 .border:hover {
   border-color: #068FF4;
+}
+
+.input [ type =color]{
+  background-color: #068FF4;
+  width: 30px;
+  height: 30px;
 }
 
 .hover\:font-bold:hover {
@@ -2564,4 +2574,4 @@ body {
     }
   }
 }
-
+  
