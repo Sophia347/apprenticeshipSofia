@@ -101,13 +101,13 @@
     border-color: #068FF4;
 }
 
-input[type="checkbox"] {
+.perfilCheckbox  {
     appearance: none;
     cursor: pointer;
     border: 1px solid #061b9c;
   }
   
-input[type="checkbox"]:checked {
+.perfilCheckbox:checked  {
     background-image: url("img/check.svg");
     background-repeat: no-repeat;
     background-position: center;

@@ -2507,7 +2507,7 @@ video {
   border-color: #068FF4;
 }
 
-input[type="checkbox"] {
+.perfilCheckbox  {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2515,7 +2515,7 @@ input[type="checkbox"] {
   border: 1px solid #061b9c;
 }
 
-input[type="checkbox"]:checked {
+.perfilCheckbox:checked  {
   background-image: url("img/check.svg");
   background-repeat: no-repeat;
   background-position: center;
