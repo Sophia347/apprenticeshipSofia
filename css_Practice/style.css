@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.body-list {
+    background-image: url("img/Bitmap.jpg");
+}
+
+.body-perfil {
+    background: #171616;
+}
+
+.caja_login {
+    width: 440px;
+    height: 517px;
+    opacity: 0.81;
+
+}
+
+.navbar_register {
+
+    size: 18px;
+}
+
+.boton_inici_sesion {
+    background: #0578FF;
+    border-radius: 4px;
+    height: 47px;
+    width: 341px;
+
+
+}
+
+.bot_login {
+    background: #0578FF;
+    width: 115px;
+    height: 34px;
+    align-content: center;
+}
+
+.item {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 6.91%, #000000 68.61%);
+}
+
+.items_grid {
+
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: min-content (30, auto);
+    gap: 1em;
+
+}
+
+.hover_line:hover {
+    text-decoration: underline;
+
+}
+
+.cuadrado {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border: 1px solid #000;
+
+}
+
+.container {
+    background-color: #171616;
+    
+}
+
+.linea {
+    color: #979797;
+    Opacity: 19.94%
+
+}
+
+.botton1 {
+    Width: 114px;
+    background-color: rgba(5, 120, 255, 1);
+    color: white;
+ 
+    
+}
+
+.botton2 {
+    Width: 166px;
+
+}
+
+.botton3 {
+    Width: 273px;
+
+}
+
+.border {
+    border: 1px solid #061B9C;
+}
+
+.border:hover {
+    border-color: #068FF4;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #061b9c;
+  }
+  
+input[type="checkbox"]:checked {
+    background-image: url("img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+
+
