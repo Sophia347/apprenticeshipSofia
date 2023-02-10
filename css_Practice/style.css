@@ -103,11 +103,15 @@ body {
     border-color: #068FF4;
 }
 
-
-
-  .input [ type =color]{
-    background-color: #068FF4;
-    width: 30px;
-    height: 30px;
+input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #061b9c;
+  }
+  
+input[type="checkbox"]:checked {
+    background-image: url("img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
