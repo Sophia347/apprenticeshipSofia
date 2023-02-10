@@ -2423,12 +2423,8 @@ video {
   content: var(--tw-content);
 }
 
-body {
-  background-image: url("img/Bitmap.jpg");
-}
-
 .body-list {
-  background: black;
+  background-image: url("img/Bitmap.jpg");
 }
 
 .body-perfil {
@@ -2595,3 +2591,5 @@ input[type="checkbox"]:checked {
   }
 }
   
+
+

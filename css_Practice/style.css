@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body { 
-    background-image: url("img/Bitmap.jpg");
-}
+
 .body-list {
-    background: black;
+    background-image: url("img/Bitmap.jpg");
 }
 
 .body-perfil {
@@ -115,3 +113,5 @@ input[type="checkbox"]:checked {
     background-position: center;
   }
   
+
+
