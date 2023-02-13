@@ -865,6 +865,14 @@ video {
   width: 20rem;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1918,6 +1926,10 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2636,6 +2648,14 @@ video {
     margin-left: 3rem;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2650,6 +2670,10 @@ video {
 
   .md\:pt-11 {
     padding-top: 2.75rem;
+  }
+
+  .md\:pl-12 {
+    padding-left: 3rem;
   }
 }
 
