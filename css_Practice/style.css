@@ -48,8 +48,11 @@
     grid-template-columns: auto auto auto auto;
     grid-template-rows: min-content (30, auto);
     gap: 1em;
+    
 
 }
+
+
 
 .hover_line:hover {
     text-decoration: underline;
@@ -88,6 +91,7 @@
 
 }
 
+
 .botton3 {
     Width: 273px;
 
@@ -112,6 +116,5 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  
 
 
