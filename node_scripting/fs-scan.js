@@ -1,33 +1,38 @@
-
 const fs = require("fs");
 
-function archivosRaiz(){
-    let array = fs.readdirSync("./");
-    return array;
+function getArchivosRaiz() {
+  let array = fs.readdirSync("./");
+  return array;
 }
 
-const archivos  = archivosRaiz();
-
-
-function expresion(){
+function obtenerExpresion() {
   let resul = process.argv[2];
   return resul;
-
 }
-const exp = expresion();
-console.log("expresion: ", exp);
-
-function busqueda(exp, array) {
+function buscarArchivos(exp, array) {
   let resultado = [];
   let i = 0;
+  let coincide = false;
+
   while (i < array.length) {
-    let lista = array[i].match(exp);
-    if (lista) {
-    resultado.push(array[i]);
+    coincide = array[i].match(exp);
+    if (coincide) {
+      resultado.push(array[i]);
     }
     i += 1;
-  } 
+  }
   return resultado;
 }
 
-console.log("busqueda", busqueda(exp,archivos));
+function main() {
+  const archivos = getArchivosRaiz();
+  const exp = obtenerExpresion();
+  const archivosEncontrados = buscarArchivos(exp, archivos);
+  console.log(
+    "Los archivos que coinciden con la expresión son:",
+    archivosEncontrados
+  );
+  return;
+}
+
+main();
