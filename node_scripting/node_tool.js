@@ -1,4 +1,4 @@
-import { Octokit } from "octokit";
+const { Octokit } = require("@octokit/core");
 
 function obtenerRepositorio() {
   let resul = process.argv[2];
