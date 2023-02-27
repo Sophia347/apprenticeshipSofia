@@ -1,5 +1,5 @@
-import * as dotenv from "dotenv";
-dotenv.config();
+/* eslint-disable no-undef */
+require("dotenv").config();
 const authentication = process.env.GITHUB_TOKEN;
 const { Octokit } = require("@octokit/core");
 
