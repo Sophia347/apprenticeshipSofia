@@ -1,3 +1,6 @@
+import * as dotenv from "dotenv";
+dotenv.config();
+const authentication = process.env.GITHUB_TOKEN;
 const { Octokit } = require("@octokit/core");
 
 function obtenerRepositorio() {
@@ -7,7 +10,7 @@ function obtenerRepositorio() {
 
 function main() {
   const repo = obtenerRepositorio();
-  console.log("repositorio", repo);
+  console.log("repositorio", repo, authentication);
 }
 
 main();
