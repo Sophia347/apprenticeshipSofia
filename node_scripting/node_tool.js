@@ -2,12 +2,12 @@
 const authentication = process.env.GITHUB_TOKEN;
 const { Octokit } = require("@octokit/core");
 const octokit = new Octokit({ auth: authentication });
+
 function obtenerRepositorio() {
   let resul = process.argv[2];
   return resul;
 }
 async function enlistarProyectos(repo) {
-  const octokit = new Octokit({ auth: authentication });
   const projectsUrl = "/projects";
   const reposUrl = "GET /repos";
   const { data } = await octokit.request(`${reposUrl}${repo}${projectsUrl}`);
