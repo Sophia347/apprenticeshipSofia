@@ -3,10 +3,6 @@ const authentication = process.env.GITHUB_TOKEN;
 const { Octokit } = require("@octokit/core");
 const octokit = new Octokit({ auth: authentication });
 
-function obtenerRepositorio() {
-  let resul = process.argv[2];
-  return resul;
-}
 async function enlistarProyectos(repo) {
   const projectsUrl = "/projects";
   const reposUrl = "GET /repos";
@@ -108,18 +104,42 @@ async function getCardsNames(cards) {
   }
   return resultado;
 }
+
+async function buscarProyectos(projects, expresion) {
+  let i = 0;
+  let resultado = [];
+
+  while (i < projects.length) {
+    const proyecto = projects[i];
+    const nombreProyecto = proyecto.proyecto_name;
+    if (nombreProyecto.match(expresion)) {
+      resultado.push(nombreProyecto);
+    }
+    i++;
+  }
+  return resultado;
+}
+
 async function main() {
-  const repo = obtenerRepositorio();
+  const repo = process.argv[2];
+  const expresion = process.argv[3];
+
   try {
     const projects = await enlistarProyectos(repo);
     const columns = await enlistarColumnas(projects);
     const cards = await enlistarCards(columns);
     const projects_info = await getCardsNames(cards);
+    const proyectos_coincidentes = await buscarProyectos(projects, expresion);
+
     console.log(
       "Información de los proyectos del repositorio: ",
       repo,
       "\n",
       projects_info
+    );
+    console.log(
+      `Proyectos coincidentes con "${expresion}":`,
+      proyectos_coincidentes
     );
   } catch (error) {
     console.error("Error al obtener la información del repositorio:", error);
